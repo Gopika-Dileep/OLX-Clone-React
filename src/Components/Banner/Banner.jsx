@@ -12,7 +12,7 @@ function Banner() {
       setSearchQuery('');
       navigate('/search');
   };
-
+     
   const categories = [
     "Mobile Phones",
     "Cars",

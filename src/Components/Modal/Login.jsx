@@ -46,7 +46,7 @@ const Login = ({ toggleModal, status }) => {
             <div className="custom-modal-box">
                 <img onClick={toggleModal} className="w-6 absolute z-10 top-4 right-4 cursor-pointer" src={close} alt="Close" />
                 <div className="p-6 pl-2 pr-2 bg-white relative">
-                    {/* Simple Carousel */}
+                    {/* Carousel */}
                     <div className="w-full h-56 pb-5 flex flex-col items-center justify-center relative">
                         <img className="w-24 pb-5" src={carouselData[carouselIndex].img} alt="Carousel" />
                         <p style={{ color: '#002f34' }} className="w-60 sm:w-72 text-center pb-5 font-semibold">{carouselData[carouselIndex].text}</p>

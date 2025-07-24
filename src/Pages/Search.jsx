@@ -13,7 +13,7 @@ function Search() {
                     <h2 className="text-xl font-semibold">
                         {searchQuery ? `Search results for "${searchQuery}"` : 'All Items'}
                         <span className="text-gray-500 ml-2">
-                            ({filteredItems.length} items)
+                            ({filteredItems.length} items)  
                         </span>
                     </h2>
                 </div>

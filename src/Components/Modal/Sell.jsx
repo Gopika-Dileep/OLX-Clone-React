@@ -60,6 +60,7 @@ const Sell = (props) => {
             setSubmitting(false)
             return;
         }
+        
         try {
             await addDoc(collection(fireStore, 'products'), {
                 title,

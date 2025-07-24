@@ -20,20 +20,16 @@ const Home = () => {
     setModalSell(!openModalSell);
   };
 
-  const { items, setItems } = useItems(); //refers to the context value;
+  const { items, setItems } = useItems();
 
   useEffect(() => {
     const getItems = async () => {
       const datas = await fetchFromFireStore();
-      setItems(datas); // Fetch and set items in context
+      setItems(datas);
     };
 
     getItems();
   }, [setItems]);
-
-  useEffect(() => {
-    console.log("Updated Items:", items);
-  }, [items]);
 
   return (
     <>
